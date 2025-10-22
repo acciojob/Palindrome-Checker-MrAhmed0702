@@ -5,14 +5,14 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-function palindrome(str) {
+function isPalindrome(str) {
     const cleanedStr = str.replace(/[^a-z0-9]/gi, '').toLowerCase();
     return cleanedStr === cleanedStr.split('').reverse().join('');
 }
 
 // Ask the user for input using the readline interface
 rl.question('Enter a sentence: ', (sentence) => {
-    if (palindrome(sentence)) {
+    if (isPalindrome(sentence)) {
         console.log(true);
     } else {
         console.log(false);
