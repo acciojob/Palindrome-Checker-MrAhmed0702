@@ -5,9 +5,6 @@ function palindrome(str){
 }
 
 let sentence = prompt("Enter a sentence");
-if(palindrome(sentence)){
-	return alert(true);
-} else {
-	return alert(false);
-}
 
+if(palindrome(sentence)) alert(true)
+else alert(false);
